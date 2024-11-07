@@ -16,7 +16,9 @@ xbps-install -Su \
     nvidia \
     dbus \
     lightdm \
-    lightdm-gtk3-greeter
+    lightdm-gtk3-greeter \
+    polybar \
+    feh
 
 # Set up dbus as service 
 sudo ln -s /etc/sv/dbus /var/service/dbus 
@@ -27,7 +29,6 @@ sudo ln -s /etc/sv/lightdm /var/service/lightdm
 # Set up git info
 git config --global user.name "kaseyhinton"
 git config --global user.email "20712428+kaseyhinton@users.noreply.github.com"
-
 
 echo "exec i3" >> ~/.xinitrc
 
